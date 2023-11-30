@@ -27,7 +27,7 @@ const Roadmap = ({ dataRoad, userId, errors }) => {
   return (
     <>
       <Head>
-        <title>ReallyConfused</title>
+        <title>EduSync</title>
       </Head>
       <CustomNav />
       <Container className={"d-none d-md-block mt-4"}>

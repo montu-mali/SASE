@@ -53,7 +53,7 @@ function Home({ languages, careers, mentors }) {
   return (
     <>
       <NextSeo
-        title="ReallyConfused"
+        title="EduSync"
         description="Explore, Create and Share Learning Roadmaps in Tech"
         openGraph={{
           type: "website",
@@ -73,34 +73,6 @@ function Home({ languages, careers, mentors }) {
       />
       <Nav />
       <Container>
-        <Container>
-          {!isUser ? (
-            <>
-              {/* <LandingCard
-                title={
-                  "Explore, Create and Share Learning Roadmaps in Tech"
-                }
-                body={
-                  "Explore roadmaps on how to break into tech careers using self-study. Understand what courses to take, books to read, projects to build, how to network, and how much money you need to spend to get a job in tech. Then build your own roadmap and crush those long-term goals!"
-                }
-                img={"worker.svg"}
-                isLeft={"true"}
-                big={true}
-              /> */}
-
-              {/* <Container className={"d-flex justify-content-around"}>
-                <Button
-                  onClick={() => history.push("/about")}
-                  style={{ fontSize: "1rem" }}
-                  variant="outline-primary"
-                >
-                  <span className={"font-weight-bold"}>Learn More</span>
-                </Button>
-              </Container> */}
-            </>
-          ) : null}
-        </Container>
-
         <Container>
           <div className={"mt-5 ml-3"}>
             <h3>Roadmaps With Mentors 🧑‍🏫</h3>

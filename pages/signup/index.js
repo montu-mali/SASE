@@ -69,7 +69,7 @@ const SignUp = ({ to }) => {
   return (
     <>
       <Head>
-        <title>ReallyConfused - Roadmap</title>
+        <title>EduSync - Roadmap</title>
       </Head>
       <Container fluid={true}>
         <Row className={styles.column}>

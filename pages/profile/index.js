@@ -20,7 +20,7 @@ const Roadmap = () => {
   return (
     <>
       <Head>
-        <title>ReallyConfused - Profile</title>
+        <title>EduSync - Profile</title>
       </Head>
       <CustomNav />
       <Container>

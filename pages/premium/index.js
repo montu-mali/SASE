@@ -51,7 +51,7 @@ const Premium = () => {
     >
       <Nav />
       <Head>
-        <title>ReallyConfused - Premium</title>
+        <title>EduSync - Premium</title>
       </Head>
       <script src="https://gumroad.com/js/gumroad.js"></script>
       <Container className={"mt-4 d-flex justify-content-center"}>

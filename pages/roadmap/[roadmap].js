@@ -22,7 +22,7 @@ const Roadmap = (props) => {
   return (
     <>
       <Head>
-        <title>ReallyConfused - Roadmap</title>
+        <title>EduSync - Roadmap</title>
       </Head>
       <CustomNav />
       <ShowRoadmap referer={referer} />

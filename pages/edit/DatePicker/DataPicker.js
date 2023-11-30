@@ -17,25 +17,6 @@ const DatePicker = ({ order, onChange }) => {
     let stepCompleted = data[order].completed;
     let disabled = false;
 
-    // if (completed && today < chosenDate) {
-    //   disabled = true;
-    // }
-
-    // if (stepCompleted && today < chosenDate) {
-    //   disabled = true;
-    // }
-
-    // if (!completed && !stepCompleted && today > chosenDate) {
-    //   disabled = true;
-    // }
-
-    // if (order !== 0 && new Date(data[order - 1].date) > chosenDate) {
-    //   disabled = true;
-    // }
-
-    // if (data[order + 1]?.date && new Date(data[order + 1].date) < chosenDate) {
-    //   disabled = true;
-    // }
 
     return disabled;
   };

@@ -61,7 +61,7 @@ const Login = ({ to }) => {
   return (
     <>
       <Head>
-        <title>ReallyConfused - Login</title>
+        <title>EduSync- Login</title>
       </Head>
       <Container fluid={true}>
         <Row className={styles.column}>
