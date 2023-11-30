@@ -52,13 +52,25 @@ function Home({ languages, careers, mentors }) {
 
   return (
     <>
+      <video className='videoTag' style={{
+        height: "100vh",
+        width: "100vw",
+        float: "left",
+        top: 0,
+        padding:0,
+        position: "fixed",
+        backgroundColor:"white"
+        
+      }} autoPlay loop muted>
+      <source src="https://cdn.dribbble.com/users/4903659/screenshots/11057880/media/884fe0e7b99fb38d1092eb23e5d1d9e0.mp4" type='video/mp4' />
+    </video >
       <NextSeo
         title="EduSync"
         description="Explore, Create and Share Learning Roadmaps in Tech"
         openGraph={{
           type: "website",
           url: "https://www.reallyconfused.co",
-          title: "ReallyConfused",
+          title: "EduSync",
           description:
             "Explore, Create and Share Learning Roadmaps in Tech",
           images: [
@@ -102,7 +114,7 @@ function Home({ languages, careers, mentors }) {
             {careers?.steps
               ?.sort((a, b) => (b.title > a.title ? -1 : 1))
               ?.map((x, i) => (
-                <Card  
+                <Card
                   count={x.roadmap_count}
                   onClick={() => clickHandler(x.id, "career")}
                   key={i}
@@ -201,11 +213,9 @@ const LandingCard = ({ title, body, isLeft, img, big }) => {
   return (
     <>
       <Row
-        className={`d-flex align-items-center ${
-          big ? "flex-col" : "flex-column-reverse"
-        } justify-content-center pt-1 pb-1  ${
-          isLeft ? "flex-md-row" : "flex-md-row-reverse"
-        }`}
+        className={`d-flex align-items-center ${big ? "flex-col" : "flex-column-reverse"
+          } justify-content-center pt-1 pb-1  ${isLeft ? "flex-md-row" : "flex-md-row-reverse"
+          }`}
       >
         <Col className={"d-flex"} md={6}>
           <img
@@ -217,9 +227,8 @@ const LandingCard = ({ title, body, isLeft, img, big }) => {
         </Col>
         <Col className={"d-flex"}>
           <div
-            className={`mt-auto text-center mb-auto ${
-              !isLeft ? "text-md-right" : "text-md-left"
-            } `}
+            className={`mt-auto text-center mb-auto ${!isLeft ? "text-md-right" : "text-md-left"
+              } `}
           >
             {big ? <h1>{title}</h1> : <h2>{title}</h2>}
             <p
