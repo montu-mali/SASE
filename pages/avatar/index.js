@@ -5,7 +5,7 @@ function index({ name }) {
     return (
         // <div>{userAvatar}</div>
         <div>
-            <img src ={`${baseUrl}/?background=3B3A3B&name=${name.replace(" ","+")}&rounded=true&color=ffffff&size=100`} alt ="pfp" />
+            <img src ={`${baseUrl}/?background=3B3A3B&name=${name?.replace(" ","+")}&rounded=true&color=ffffff&size=100`} alt ="pfp" />
         </div>
     )
 }
